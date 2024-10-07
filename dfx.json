@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "pavang_backend": {
+      "main": "src/pavang_backend/main.mo",
+      "type": "motoko"
+    },
+    "pavang_frontend": {
+      "dependencies": [
+        "pavang_backend"
+      ],
+      "source": [
+        "src/pavang_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "pavang_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
